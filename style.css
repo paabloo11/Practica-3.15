@@ -1,0 +1,16 @@
+input.naranja {
+    background-color: orangered;
+    color: white;
+    width: 200px;
+    height: 20px;
+}
+
+span {
+    color: orangered;
+}
+
+input.verde {
+    background-color: rgb(143, 209, 44);
+    width: 200px;
+    height: 20px;
+}

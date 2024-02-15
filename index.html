@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>formulario</title>
+</head>
+<body>
+    <header>
+    <h2>formularios</h2>
+    </header>
+    <hr>
+<main>
+
+ <h3>Accede a tu  Área Clientes</h3>   
+<form action="guardadatos.php">
+ <p>
+    elige tu documento
+    <br>
+    <input type="radio" name="documento" checked >DNI o Tarjeta de residencia
+    <br>
+    <input type="radio" name="documento"> Pasaporte
+</p>
+<p>
+    Numero de documento
+    <br>
+    <input type="text" name="Numero_documento" placeholder="DNI o Tarjeta de residencia">
+</p>
+<p>
+    Fecha de nacimiento
+    <br>
+    <input type="date" name="fecha">
+</p>
+
+<input type="checkbox" > Recordar
+<br>
+<br>
+<input class="naranja" type="submit">
+
+<p>
+    <span>></span> Accede con DNI electrónico
+</p>
+<p>
+    <span>></span> Más información sobre seguridad
+</p>
+</form>
+
+<hr>
+
+<h3>Empieza creando tu usuario</h3>
+<form action="guardadatos.php">
+
+<input type="text" name="nombre" placeholder="Nombre (como sale en el DNI)">
+<br>
+<br>
+<input type="text" name="apellido1" placeholder="1º apellido (como sale en el DNI)">
+<input type="text" name="apellido2" placeholder="2º apellido (como sale en el DNI)">
+<br>
+<br>
+
+<select name="tipo_documento" id="tipo_documento"> 
+    <option value="DNI">DNI</option>
+    <option value="NIF">NIF</option>
+    <option value="Cert_AEAT">Cert. AEAT</option>
+</select>
+
+<input type="text" name="numero_documento" placeholder="Número de documento">
+<br>
+<br>
+<input type="telf" name="telefono" placeholder="Móvil">
+<input type="email" name="mail" placeholder="Email">
+<br>
+
+</form>
+
+<hr>
+
+<h3>¿Eres nuevo?</h3>
+<pre>Regístrate para guardar tu información y hacer
+ tus pedidos de forma más facil y rápida</pre>
+
+ <form action="guardadatos.php">
+<p>
+    Email 
+    <br>
+    <input type="email" name="email" placeholder="introduce tu email">
+</p>
+
+<p>
+    Teléfono
+    <br>
+    <input type="telf" name="telefono" placeholder="Tu teléfono">
+</p>
+
+<p>
+    Contraseña
+    <br>
+    <input type="password" name="contraseña" placeholder="Introduce tu contraseña">
+</p>
+
+<p>
+    Confirma tu contraseña
+    <br>
+    <input type="password" name="contraseña" placeholder="Confirmar contraseña">
+</p>
+
+<input type="checkbox"> He leído y acepto Politica de privacidad
+
+<pre><input type="checkbox"> Si, acepto recibir comunicaciones comerciales 
+y ofertas personalizadas según mi perfil
+</pre>
+
+<input class="verde" type="submit" value="Crea tu cuenta">
+
+ </form>
+
+</main>
+</body>
+</html>
